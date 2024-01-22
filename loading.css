@@ -1,0 +1,383 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.animation{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+}
+ body{
+    /* overflow: hidden; */
+} 
+.animation .loader img{
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 10%;
+    transition: all ease-in 0.4s;
+    animation: anim 10s linear infinite ;
+    
+    
+}
+
+@keyframes anim{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        box-shadow: inset 0px -120px 90px rgb(238, 236, 236)236;
+        transform: rotateY(360deg); 
+    } 
+   
+}
+/* .main{
+    width: 100%;
+    height: 40px;
+   
+    justify-content: space-between;
+   
+} */
+ @keyframes mainAnimation{
+    from{
+        /* opacity: 0.5; */
+        transform: rotateY(90deg);
+
+    }
+    to{
+        /* opacity: 1; */
+        transform: rotateX(90deg);
+
+    }
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+@import url('https://fonts.googleapis.com/css?family=Mooli'); 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box-container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 3rem;
+    gap: 20px;
+}
+.imagebox{
+    flex: 1 1 auto;
+    width: 60%;
+    height: 450px;
+   
+}
+
+/* .imagebox img{
+    border-radius: 10px;
+    object-fit: cover;
+} */
+.infobox{
+    bottom: -30%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 1rem ;
+    height: 250px;
+    background:#fff;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+
+}
+.infobox:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+.title p{
+    
+    font-size: 13px;
+}
+.title1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.title1 i{
+    padding: 1rem ;
+    background: #5BA829;
+    color: #fff;
+    font-size: 15px;
+}
+.title1 i span{
+    font-size: 15px;
+}
+.location{
+   
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.location .dot{
+    display: flex;
+    gap: 10px;
+}
+.location p{
+    font-size: 12px;
+    color: grey;
+}
+.dot{
+    padding: 0.5rem 0 0 0;
+}
+.dot p{
+   
+    font-size: 15px;
+    color: black;
+}
+.dot span{
+    font-size: 15px;
+    color: grey;
+}
+
+.contact{
+    padding: 0.3rem 0;
+    color: #5BA829;
+}
+.contact i {
+    font-size: 18px;
+   
+}
+.contact i span
+{
+    font-weight: 100;
+    font-size: 20px;
+}
+.reviews{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0 0 0;
+    background:  rgb(251,251,251);
+   
+}
+
+.photos{
+    padding:0.5rem 2rem;
+    border-right: 1px solid grey;
+}
+.shortlist{
+    padding: 0.5rem 2rem;
+    border-right: 1px solid grey;
+}
+.writereview{
+    display: flex;
+    gap: 8px;
+    padding: 0.5rem 2rem;
+    border-right: 1px solid grey;
+}
+.writereview i{
+    font-size: 15px;
+
+}
+.writereview p{
+    font-size: 15px;
+}
+.writereview i span{
+    font-size: 15px;
+    font-weight: 100;
+}
+.share i span{
+    font-size: 15px;
+    font-weight: 100;
+}
+.share{
+    display: flex;
+    gap: 8px;
+    padding: 1rem;
+}
+
+.contentbox{
+    width: 35%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    
+}
+.pricelist{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+  
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #e1dede;
+    
+}
+.navline{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid grey;
+}
+.navline h4{
+    font-size: 15px;
+}
+.navline p{
+    font-size: 15px;
+    color: #EB2E77;
+}
+.veg{
+    display: flex;
+    padding:10px 10px 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid grey;
+}
+.veg  h3{
+    font-size: 20px;
+    color: #EB2E77;
+}
+.veg h3 span{
+    font-size: 15px;
+}
+.nonveg h3 span{
+    font-size: 15px;
+}
+.nonveg h3{
+    
+    font-size: 20px;
+    color: #EB2E77;
+}
+.veg p{
+    font-size: 15px;
+}
+.nonveg p{
+    font-size: 15px;
+}
+
+.nonveg{
+   
+    padding:10px 10px 5px 10px;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.regi{
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px #e3e1e1;
+    margin: 2rem 0;
+    background: #fff;
+}
+.innercontact{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EB2E77;
+}
+.detail1{
+    padding: 1rem 2rem;
+    background: #EB2E77;
+    border-radius: 30px;
+}
+.detail2{
+    background: #5BA829;
+    border-radius: 30px;
+    padding:1rem 2rem;
+}
+.detail1 i{
+    font-size: 15px;
+    color: #fff;
+}
+.detail2 i{
+    font-size: 15px;
+    color: #fff;
+}
+.detail2 span{
+    font-size: 15px;
+    font-weight: 100;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /* flex-wrap: wrap; */
+ 
+}
+.information .box1 , .box2 ,.box3{
+    display: flex;
+    gap: 10px;
+    padding: 1rem 0;
+}
+.information input{
+    width: 180px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+
+    border-bottom: 1px solid black;
+}
+.functiondetails{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    gap: 10px;
+}
+.functiondetails .type p{
+    padding: 0.5rem;
+    font-size: 15px;
+}
+.functiondetails .type .show{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+#specifycolor{
+    accent-color: #F92672;
+}
+.show label{
+    font-size: 12px;
+}
+.checkavail , .notify{
+    padding: 1rem;
+}
+.notify p{
+    font-size:15px;
+}
+.checkavail{
+    margin: 0 1rem;
+    background: #EB2E77;
+    text-align: center;
+    color: #fff;
+}
